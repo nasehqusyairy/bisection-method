@@ -53,7 +53,7 @@ public class BisectionMethod {
         // simpan rekam error ke dalam tabel
         tbl.add(err);
 
-        // lanjut iterasi hingga Ea > Es
+        // lanjut iterasi hingga Ea < Es
         if (Ea > Es) {
             // status
             err[6] = "next iterration";
@@ -63,7 +63,7 @@ public class BisectionMethod {
             // karena ada return, maka baris berikutnya tidak ada berjalan
         }
 
-        // jika E < Es, maka iterasi akan diselesaikan
+        // jika Ea < Es, maka iterasi akan diselesaikan
         err[6] = "stop iterration";
 
         // ubah arraylist menjadi array biasa
